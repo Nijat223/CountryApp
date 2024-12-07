@@ -10,7 +10,6 @@
 		CAD9821B2D044C660071FEBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9821A2D044C660071FEBF /* AppDelegate.swift */; };
 		CAD9821D2D044C660071FEBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9821C2D044C660071FEBF /* SceneDelegate.swift */; };
 		CAD9821F2D044C660071FEBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9821E2D044C660071FEBF /* ViewController.swift */; };
-		CAD982222D044C660071FEBF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CAD982212D044C660071FEBF /* Base */; };
 		CAD982242D044C670071FEBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD982232D044C670071FEBF /* Assets.xcassets */; };
 		CAD982272D044C670071FEBF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CAD982262D044C670071FEBF /* Base */; };
 		CAD9824C2D044D6B0071FEBF /* LayoutExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9824B2D044D6B0071FEBF /* LayoutExtension.swift */; };
@@ -18,6 +17,7 @@
 		CAD982512D04505C0071FEBF /* CoreAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD982502D04505C0071FEBF /* CoreAPIManager.swift */; };
 		CAD982532D04506B0071FEBF /* CoreAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD982522D04506B0071FEBF /* CoreAPIHelper.swift */; };
 		CAD982552D0450830071FEBF /* CoreErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD982542D0450830071FEBF /* CoreErrorModel.swift */; };
+		CAD982592D04529B0071FEBF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD982582D04529B0071FEBF /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 		CAD9821A2D044C660071FEBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAD9821C2D044C660071FEBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CAD9821E2D044C660071FEBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CAD982212D044C660071FEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAD982232D044C670071FEBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAD982262D044C670071FEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAD982282D044C670071FEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		CAD982502D04505C0071FEBF /* CoreAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAPIManager.swift; sourceTree = "<group>"; };
 		CAD982522D04506B0071FEBF /* CoreAPIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAPIHelper.swift; sourceTree = "<group>"; };
 		CAD982542D0450830071FEBF /* CoreErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreErrorModel.swift; sourceTree = "<group>"; };
+		CAD982582D04529B0071FEBF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +101,11 @@
 		CAD982192D044C660071FEBF /* CountryApp */ = {
 			isa = PBXGroup;
 			children = (
+				CAD982572D0452740071FEBF /* App */,
+				CAD982562D0452360071FEBF /* Presentation */,
 				CAD9824F2D0450490071FEBF /* Core */,
-				CAD9824A2D044D2E0071FEBF /* Extension */,
-				CAD9821A2D044C660071FEBF /* AppDelegate.swift */,
-				CAD9821C2D044C660071FEBF /* SceneDelegate.swift */,
 				CAD9821E2D044C660071FEBF /* ViewController.swift */,
-				CAD982202D044C660071FEBF /* Main.storyboard */,
+				CAD9824A2D044D2E0071FEBF /* Extension */,
 				CAD982232D044C670071FEBF /* Assets.xcassets */,
 				CAD982252D044C670071FEBF /* LaunchScreen.storyboard */,
 				CAD982282D044C670071FEBF /* Info.plist */,
@@ -129,6 +128,31 @@
 				CAD982502D04505C0071FEBF /* CoreAPIManager.swift */,
 				CAD982522D04506B0071FEBF /* CoreAPIHelper.swift */,
 				CAD982542D0450830071FEBF /* CoreErrorModel.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CAD982562D0452360071FEBF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9825A2D0452A90071FEBF /* Core */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CAD982572D0452740071FEBF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9821A2D044C660071FEBF /* AppDelegate.swift */,
+				CAD9821C2D044C660071FEBF /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CAD9825A2D0452A90071FEBF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CAD982582D04529B0071FEBF /* BaseViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -239,7 +263,6 @@
 			files = (
 				CAD982242D044C670071FEBF /* Assets.xcassets in Resources */,
 				CAD982272D044C670071FEBF /* Base in Resources */,
-				CAD982222D044C660071FEBF /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +292,7 @@
 				CAD982512D04505C0071FEBF /* CoreAPIManager.swift in Sources */,
 				CAD982552D0450830071FEBF /* CoreErrorModel.swift in Sources */,
 				CAD9821F2D044C660071FEBF /* ViewController.swift in Sources */,
+				CAD982592D04529B0071FEBF /* BaseViewController.swift in Sources */,
 				CAD9821B2D044C660071FEBF /* AppDelegate.swift in Sources */,
 				CAD9821D2D044C660071FEBF /* SceneDelegate.swift in Sources */,
 				CAD9824C2D044D6B0071FEBF /* LayoutExtension.swift in Sources */,
@@ -305,14 +329,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CAD982202D044C660071FEBF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAD982212D044C660071FEBF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CAD982252D044C670071FEBF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
