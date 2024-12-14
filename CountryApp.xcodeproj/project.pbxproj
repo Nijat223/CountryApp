@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CAD9821B2D044C660071FEBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9821A2D044C660071FEBF /* AppDelegate.swift */; };
 		CAD9821D2D044C660071FEBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9821C2D044C660071FEBF /* SceneDelegate.swift */; };
-		CAD9821F2D044C660071FEBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9821E2D044C660071FEBF /* ViewController.swift */; };
 		CAD982242D044C670071FEBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD982232D044C670071FEBF /* Assets.xcassets */; };
 		CAD982272D044C670071FEBF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CAD982262D044C670071FEBF /* Base */; };
 		CAD9824C2D044D6B0071FEBF /* LayoutExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9824B2D044D6B0071FEBF /* LayoutExtension.swift */; };
@@ -22,6 +21,11 @@
 		CAD9825F2D0454B60071FEBF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9825E2D0454B60071FEBF /* MainViewController.swift */; };
 		CAD982632D0D81FF0071FEBF /* AllCountryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD982622D0D81FF0071FEBF /* AllCountryHelper.swift */; };
 		CAD982652D0D822B0071FEBF /* AllCountryAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD982642D0D822B0071FEBF /* AllCountryAPIService.swift */; };
+		CAD9826B2D0D83910071FEBF /* CountryDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9826A2D0D83910071FEBF /* CountryDetailController.swift */; };
+		CAD9826D2D0D83B80071FEBF /* CountryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9826C2D0D83B80071FEBF /* CountryDetailViewModel.swift */; };
+		CAD982712D0D84780071FEBF /* TitleSubtitleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD982702D0D84780071FEBF /* TitleSubtitleProtocol.swift */; };
+		CAD982732D0D849D0071FEBF /* CountryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD982722D0D849D0071FEBF /* CountryDTO.swift */; };
+		CAD982772D0D851F0071FEBF /* TitleSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD982762D0D851F0071FEBF /* TitleSubtitleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +49,6 @@
 		CAD982172D044C660071FEBF /* CountryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD9821A2D044C660071FEBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAD9821C2D044C660071FEBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CAD9821E2D044C660071FEBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAD982232D044C670071FEBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAD982262D044C670071FEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAD982282D044C670071FEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +64,11 @@
 		CAD9825E2D0454B60071FEBF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CAD982622D0D81FF0071FEBF /* AllCountryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryHelper.swift; sourceTree = "<group>"; };
 		CAD982642D0D822B0071FEBF /* AllCountryAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryAPIService.swift; sourceTree = "<group>"; };
+		CAD9826A2D0D83910071FEBF /* CountryDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailController.swift; sourceTree = "<group>"; };
+		CAD9826C2D0D83B80071FEBF /* CountryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewModel.swift; sourceTree = "<group>"; };
+		CAD982702D0D84780071FEBF /* TitleSubtitleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleProtocol.swift; sourceTree = "<group>"; };
+		CAD982722D0D849D0071FEBF /* CountryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDTO.swift; sourceTree = "<group>"; };
+		CAD982762D0D851F0071FEBF /* TitleSubtitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +120,6 @@
 				CAD982572D0452740071FEBF /* App */,
 				CAD982602D0D815B0071FEBF /* NetworkLayer */,
 				CAD982562D0452360071FEBF /* Presentation */,
-				CAD9821E2D044C660071FEBF /* ViewController.swift */,
 				CAD9824A2D044D2E0071FEBF /* Extension */,
 				CAD982232D044C670071FEBF /* Assets.xcassets */,
 				CAD982252D044C670071FEBF /* LaunchScreen.storyboard */,
@@ -197,16 +204,61 @@
 		CAD982662D0D827F0071FEBF /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				CAD982672D0D82920071FEBF /* CountryDetailController */,
+				CAD9826E2D0D84590071FEBF /* CountryController */,
+				CAD982682D0D836F0071FEBF /* CountryDetailController */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		CAD982672D0D82920071FEBF /* CountryDetailController */ = {
+		CAD982682D0D836F0071FEBF /* CountryDetailController */ = {
 			isa = PBXGroup;
 			children = (
+				CAD982692D0D837B0071FEBF /* ViewModule */,
 			);
 			path = CountryDetailController;
+			sourceTree = "<group>";
+		};
+		CAD982692D0D837B0071FEBF /* ViewModule */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9826A2D0D83910071FEBF /* CountryDetailController.swift */,
+				CAD9826C2D0D83B80071FEBF /* CountryDetailViewModel.swift */,
+			);
+			path = ViewModule;
+			sourceTree = "<group>";
+		};
+		CAD9826E2D0D84590071FEBF /* CountryController */ = {
+			isa = PBXGroup;
+			children = (
+				CAD982742D0D84E60071FEBF /* Views */,
+				CAD9826F2D0D84670071FEBF /* Models */,
+			);
+			path = CountryController;
+			sourceTree = "<group>";
+		};
+		CAD9826F2D0D84670071FEBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAD982702D0D84780071FEBF /* TitleSubtitleProtocol.swift */,
+				CAD982722D0D849D0071FEBF /* CountryDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CAD982742D0D84E60071FEBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CAD982752D0D84F20071FEBF /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CAD982752D0D84F20071FEBF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CAD982762D0D851F0071FEBF /* TitleSubtitleCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,16 +391,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD982772D0D851F0071FEBF /* TitleSubtitleCell.swift in Sources */,
 				CAD982532D04506B0071FEBF /* CoreAPIHelper.swift in Sources */,
 				CAD9825F2D0454B60071FEBF /* MainViewController.swift in Sources */,
 				CAD9824E2D0450010071FEBF /* Extension.swift in Sources */,
 				CAD982512D04505C0071FEBF /* CoreAPIManager.swift in Sources */,
 				CAD982552D0450830071FEBF /* CoreErrorModel.swift in Sources */,
-				CAD9821F2D044C660071FEBF /* ViewController.swift in Sources */,
+				CAD9826B2D0D83910071FEBF /* CountryDetailController.swift in Sources */,
+				CAD982712D0D84780071FEBF /* TitleSubtitleProtocol.swift in Sources */,
 				CAD982632D0D81FF0071FEBF /* AllCountryHelper.swift in Sources */,
 				CAD9825D2D0453E70071FEBF /* MainViewModel.swift in Sources */,
 				CAD982592D04529B0071FEBF /* BaseViewController.swift in Sources */,
 				CAD9821B2D044C660071FEBF /* AppDelegate.swift in Sources */,
+				CAD982732D0D849D0071FEBF /* CountryDTO.swift in Sources */,
+				CAD9826D2D0D83B80071FEBF /* CountryDetailViewModel.swift in Sources */,
 				CAD9821D2D044C660071FEBF /* SceneDelegate.swift in Sources */,
 				CAD982652D0D822B0071FEBF /* AllCountryAPIService.swift in Sources */,
 				CAD9824C2D044D6B0071FEBF /* LayoutExtension.swift in Sources */,
