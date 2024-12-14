@@ -18,6 +18,10 @@
 		CAD982532D04506B0071FEBF /* CoreAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD982522D04506B0071FEBF /* CoreAPIHelper.swift */; };
 		CAD982552D0450830071FEBF /* CoreErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD982542D0450830071FEBF /* CoreErrorModel.swift */; };
 		CAD982592D04529B0071FEBF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD982582D04529B0071FEBF /* BaseViewController.swift */; };
+		CAD9825D2D0453E70071FEBF /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9825C2D0453E70071FEBF /* MainViewModel.swift */; };
+		CAD9825F2D0454B60071FEBF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9825E2D0454B60071FEBF /* MainViewController.swift */; };
+		CAD982632D0D81FF0071FEBF /* AllCountryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD982622D0D81FF0071FEBF /* AllCountryHelper.swift */; };
+		CAD982652D0D822B0071FEBF /* AllCountryAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD982642D0D822B0071FEBF /* AllCountryAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		CAD982522D04506B0071FEBF /* CoreAPIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAPIHelper.swift; sourceTree = "<group>"; };
 		CAD982542D0450830071FEBF /* CoreErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreErrorModel.swift; sourceTree = "<group>"; };
 		CAD982582D04529B0071FEBF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CAD9825C2D0453E70071FEBF /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CAD9825E2D0454B60071FEBF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CAD982622D0D81FF0071FEBF /* AllCountryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryHelper.swift; sourceTree = "<group>"; };
+		CAD982642D0D822B0071FEBF /* AllCountryAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountryAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				CAD982572D0452740071FEBF /* App */,
+				CAD982602D0D815B0071FEBF /* NetworkLayer */,
 				CAD982562D0452360071FEBF /* Presentation */,
-				CAD9824F2D0450490071FEBF /* Core */,
 				CAD9821E2D044C660071FEBF /* ViewController.swift */,
 				CAD9824A2D044D2E0071FEBF /* Extension */,
 				CAD982232D044C670071FEBF /* Assets.xcassets */,
@@ -135,6 +143,8 @@
 		CAD982562D0452360071FEBF /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				CAD982662D0D827F0071FEBF /* Main */,
+				CAD9825B2D0453D20071FEBF /* ViewModules */,
 				CAD9825A2D0452A90071FEBF /* Core */,
 			);
 			path = Presentation;
@@ -155,6 +165,48 @@
 				CAD982582D04529B0071FEBF /* BaseViewController.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		CAD9825B2D0453D20071FEBF /* ViewModules */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9825C2D0453E70071FEBF /* MainViewModel.swift */,
+				CAD9825E2D0454B60071FEBF /* MainViewController.swift */,
+			);
+			path = ViewModules;
+			sourceTree = "<group>";
+		};
+		CAD982602D0D815B0071FEBF /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CAD982612D0D81E20071FEBF /* AllCountry */,
+				CAD9824F2D0450490071FEBF /* Core */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		CAD982612D0D81E20071FEBF /* AllCountry */ = {
+			isa = PBXGroup;
+			children = (
+				CAD982622D0D81FF0071FEBF /* AllCountryHelper.swift */,
+				CAD982642D0D822B0071FEBF /* AllCountryAPIService.swift */,
+			);
+			path = AllCountry;
+			sourceTree = "<group>";
+		};
+		CAD982662D0D827F0071FEBF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CAD982672D0D82920071FEBF /* CountryDetailController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CAD982672D0D82920071FEBF /* CountryDetailController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CountryDetailController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,13 +340,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAD982532D04506B0071FEBF /* CoreAPIHelper.swift in Sources */,
+				CAD9825F2D0454B60071FEBF /* MainViewController.swift in Sources */,
 				CAD9824E2D0450010071FEBF /* Extension.swift in Sources */,
 				CAD982512D04505C0071FEBF /* CoreAPIManager.swift in Sources */,
 				CAD982552D0450830071FEBF /* CoreErrorModel.swift in Sources */,
 				CAD9821F2D044C660071FEBF /* ViewController.swift in Sources */,
+				CAD982632D0D81FF0071FEBF /* AllCountryHelper.swift in Sources */,
+				CAD9825D2D0453E70071FEBF /* MainViewModel.swift in Sources */,
 				CAD982592D04529B0071FEBF /* BaseViewController.swift in Sources */,
 				CAD9821B2D044C660071FEBF /* AppDelegate.swift in Sources */,
 				CAD9821D2D044C660071FEBF /* SceneDelegate.swift in Sources */,
+				CAD982652D0D822B0071FEBF /* AllCountryAPIService.swift in Sources */,
 				CAD9824C2D044D6B0071FEBF /* LayoutExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
